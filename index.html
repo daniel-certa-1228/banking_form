@@ -4,6 +4,7 @@
 	<head>
 		<title>Banking Form</title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="main.css">
 	</head>
 	
 	<body>
@@ -13,19 +14,22 @@
 			<form action="index.html" method="post">
 				<h3>Sign Up For Online Banking</h3>
 
-				<label for="first_name">First Name:</label><br>
-				<input type="text" id="first_name" name="first_name" required><br>
+				<fieldset id="basic-info">
+					<legend>Your Basic Info</legend>
+						<label for="first_name">First Name:</label><br>
+						<input type="text" id="first_name" name="first_name" required><br>
 
-				<label for="middle_initial">Middle Initial:</label><br>
-				<input type="text" id="middle_initial" name="middle_initial" required><br>
+						<label for="middle_initial">Middle Initial:</label><br>
+						<input type="text" id="middle_initial" name="middle_initial" required><br>
 
-				<label for="last_name">Last Name:</label><br>
-				<input type="text" id="last_name" name="last_name" required><br>
+						<label for="last_name">Last Name:</label><br>
+						<input type="text" id="last_name" name="last_name" required><br>
 
-				<label for="user_email">Your Email:</label><br>
-				<input type="email" id="user_email" name="user_email" placeholder="you@example.com" required><br>
+						<label for="user_email">Your Email:</label><br>
+						<input type="email" id="user_email" name="user_email" placeholder="you@example.com" required><br>
+				</fieldset>
 
-				<fieldset class="mailing-address">
+				<fieldset id="mailing-address">
 					<legend>Your Permanent Address</legend>
 						<label for="street_address">Street Address:</label><br>
 						<input type="text" id="street_address" name="street_address" required><br>
@@ -93,12 +97,103 @@
 
 						<label for="zip_code">Zip:</label><br>
 						<input type="text" id="zip_code" name="zip_code" required><br>
+				</fieldset>
 
+				<fieldset>
+					<legend>Your Employment Info</legend>
 
+						<label for="occupation">Your Occupation:</label><br>
+						<input type="text" id="occupation" name="occupation" required><br>
 
+						<label for="employer">Your Employer:</label><br>
+						<input type="text" id="employer" name="employer" required><br>	
+						
+						<fieldset id="emp-address">
+							<legend class="underlined">Employer Address</legend>
+								<label for="employer_street">Street Address:</label><br>
+								<input type="text" id="employer_street" name="employer_street" required><br>
 
+								<label for="employer_suite">Apt or Suite Number:</label><br>
+								<input type="text" id="employer_suite" name="employer_suiter"><br>
+
+								<label for="employer_city">City:</label><br>
+								<input type="text" id="employer_city" name="employer_city" required><br>
+
+								<label for="employer_state">State:</label><br>
+								<select name="employer_state" id="employer_state">
+									<option value="">-Select Your State-</option>
+									<option value="Alabama">Alabama</option>
+									<option value="Alaska">Alaska</option>
+									<option value="Arizona">Arizona</option>
+									<option value="Arkansas">Arkansas</option>
+									<option value="California">California</option>
+									<option value="Colorado">Colorado</option>
+									<option value="Connecticut">Connecticut</option>
+									<option value="Delaware">Delaware</option>
+									<option value="Florida">Florida</option>
+									<option value="Georgia">Georgia</option>
+									<option value="Hawaii">Hawaii</option>
+									<option value="Idaho">Idaho</option>
+									<option value="Illinois">Illinois</option>
+									<option value="Indiana">Indiana</option>
+									<option value="Iowa">Iowa</option>
+									<option value="Kansas">Kansas</option>
+									<option value="Kentucky">Kentucky</option>
+									<option value="Louisiana">Louisiana</option>
+									<option value="Maine">Maine</option>
+									<option value="Maryland">Maryland</option>
+									<option value="Massachusetts">Massachusetts</option>
+									<option value="Michigan">Michigan</option>
+									<option value="Minnesota">Minnesota</option>
+									<option value="Mississippi">Mississippi</option>
+									<option value="Missouri">Missouri</option>
+									<option value="Montana">Montana</option>
+									<option value="Nebraska">Nebraska</option>
+									<option value="Nevada">Nevada</option>
+									<option value="New Hampshire">New Hampshire</option>
+									<option value="New Jersey">New Jersey</option>
+									<option value="New Mexico">New Mexico</option>
+									<option value="New York">New York</option>
+									<option value="North Carolina">North Carolina</option>
+									<option value="North Dakota">North Dakota</option>
+									<option value="Ohio">Ohio</option>
+									<option value="Oklahoma">Oklahoma</option>
+									<option value="Oregon">Oregon</option>
+									<option value="Pennsylvania">Pennsylvania</option>
+									<option value="Rhode Island">Rhode Island</option>
+									<option value="South Carolina">South Carolina</option>
+									<option value="South Dakota">South Dakota</option>
+									<option value="Tennessee">Tennessee</option>
+									<option value="Texas">Texas</option>
+									<option value="Utah">Utah</option>
+									<option value="Vermont">Vermont</option>
+									<option value="Virginia">Virginia</option>
+									<option value="Washington">Washington</option>
+									<option value="West Virginia">West Virginia</option>
+									<option value="Wisconsin">Wisconsin</option>
+									<option value="Wyoming">Wyoming</option>
+								</select><br>
+
+								<label for="employer_zip_code">Zip:</label><br>
+								<input type="text" id="employer_zip_code" name="employer_zip_code" required><br>
+							
+						</fieldset>		
 
 				</fieldset>
+				<fieldset>
+					<legend>Your Loan Info</legend>
+					<label for="loan-type">What Type Of Loan Would You Like?</label><br>
+								<select name="loan-type" id="loan-type">
+									<option value="">-Select Your Loan-</option>
+									<option value="Commercial">Commercial</option>
+									<option value="Real_estate">Real estate</option>
+									<option value="Personal">Personal</option>
+									<option value="Arkansas">Mortgage</option>
+								</select><br>
+
+				</fieldset>
+
+
 				
 			</form>
 		</div>
