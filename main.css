@@ -19,12 +19,40 @@ h3 {
 	margin-top: .5em;
 }
 
+textarea {
+	min-width: 200px;
+}
+
+input:invalid {
+	background-color: #fce5e5;
+}
+
+input:valid {
+	background-color: #e5fce7;
+}
+
+
 /*=============================
 	Class Styles
 =============================*/
 
 .underlined {
 	text-decoration: underline;
+}
+
+.radio {
+	margin-right: .5em;
+}
+
+.loan-length {
+	/*margin-top: 1em;*/
+	border: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.length-legend {
+	padding-left: 0;
 }
 
 /*=============================
@@ -37,3 +65,17 @@ h3 {
 	padding-left: .3em;
 	border-left: 1px solid grey;
 }
+
+#submit {
+	width: 200px;
+	margin-top: .5em;
+	margin-bottom: 1em;
+	background-color: white;
+	font-weight: bold;
+}
+
+#submit:hover {
+	background-color: #e5fce7;
+}
+
+
